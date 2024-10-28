@@ -5,28 +5,56 @@
         <title>Bee's Nest</title>
         <link rel="icon" href="Assets/Owls Nest/Bees Nest.png">
         <link rel="stylesheet" href="style.css">
-        
         <style>
-            /*.example{
+            body {
+                color: #000708;
+                background-color:rgb(182, 211, 246);
+                font-family: sans-serif;
+                margin: 0px;
+            }
+            img {
+                border-radius: 50% solid #555;
+            }
+            .Head1{
+                text-align: center;
+            }    
+            .upper{
                 display: grid;
-                grid-template-columns: 2fr 1fr 1fr;
+                grid-template-columns: 1fr 1fr;
+                background-color:rgb(182, 211, 246);    
             }
-            #id2{
-                grid-column: 2 / 4;
-                grid-row: ;
-            }*/
-            .example{
-                display: flex;
-                flex-wrap: wrap;
-                flex-direction: column;
-                background-image: url(Assets/LandingPage/hero-bg.svg);
-                justify-content: center;
-                align-items: center;
-                align-content: ;
-                color: white;
+            #besnes{
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                width: 50%;   
             }
-            #image1{
-                width: 800px;
+            .both{
+                display: grid;
+                grid-template-columns: 2fr 2fr;
+                background-color:rgb(182, 211, 246);
+            }
+            div.Contactz{
+                align-content: center;
+            }
+           
+            div.info{
+                text-align: center;
+            }
+            .fulltab{
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                background-color:rgb(182, 211, 246);
+            }
+            div.scroll-container {
+                overflow: auto;
+                white-space: nowrap;
+                padding: 10px;
+                background-color:rgb(51, 95, 148);
+            }
+
+            div.scroll-container img {
+                padding: 10px;
             }
 
         </style>
@@ -34,76 +62,74 @@
     
     <body>
          <!-------Header------->
-         <header>
-            <img class="logo"
-            src="Assets/Landing Page/transowllogo.png" 
-            alt="logo"
-            >
-            <span class="LogoPlaceholder" lang="en">TECHNA</span>
-            <!-------Navigation------->
-            <span class="navigation" >
-                <a href="index.html"><button>Home</button></a>
-                <a href="index.html/#Features"><button>About</button></a> <!--Issue 1-3--> <!--Does not go to features, team, contact of index-->
-                <a href="index.html/#team"><button>Team</button></a>
-                <a href="index.html/#contact"><button>Contact Us</button></a>
-            </span>
+         
+         <!-------Navigation------->
+         <header class="container-flex">
+            <div class="topReviews">
+                <a href="index.html"><img id="header-logo" src="Assets/LandingPage/Techna-logo.svg" alt="logo"></a>
+                <h1>TECHNA</h1>
+            </div>
+            <nav>
+                <a target="_blank" href="index.html#hero"><button>Home</button></a>
+                <a target="_blank" href="index.html#feature"><button>About</button></a>
+                <a target="_blank" href="index.html#team"><button>Team</button></a>
+                <a target="_blank" href="index.html#contacts"><button>Contact Us</button></a>
+            </nav>
         </header>
-        <!--Issuesss--> <!--Dagdagan ng Grid Layout and CSS
-        <h1>Bee's Nest</h1>
-        <img src="Assets/Owls Nest/Bees Nest.png" alt="Error">
-        <section id="first-part-bee's-nest">
-            <div id="map-location">
-                <img src="Assets/Bees Nest/2.png" alt="idk">
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus fuga animi amet voluptates doloremque omnis aut tempora placeat aperiam delectus pariatur expedita praesentium voluptatem similique reprehenderit saepe nesciunt, deleniti corporis.
-                </p>
-            </div>
-        </section>-->
-
-        <section class="example">
-            <div id="id1">
-                <img src="Assets/Bees Nest/2.png" id="image1" alt="">
-            </div>
-            <div id="id2">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos earum quisquam aliquam itaque? Velit laborum nulla facilis voluptatibus, in veniam reiciendis sed similique esse magnam soluta voluptates? Sequi, dolor libero!</p>
-            </div>
-            <div id="id3">
-                <img src="Assets/Bees Nest/2.png" alt="">
-            </div>
-            <div id="id4">
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis voluptates et, repudiandae sit asperiores veniam atque, magni ad assumenda minus ullam, eaque impedit similique autem inventore porro blanditiis omnis nulla?</p>
-            </div>
-        </section>
-        
-        
-        
-        
-        <!--<section class="info">
-            <p>Contacts:</p>
+        <!-------End of Header------->
+        <section class="upper">
+    
+        <img src="Assets/OwlsNest/Bees Nest.png" id="besnes" alt="Error">  
+        <div>
+            <h1 class="Head1">Bee's Nest</h1>
+            <p font-size ="100px">
+            <pre>    
             <br>
+            “Enjoy a productive and comfortable environment perfect for freelancers, entrepreneurs and small teams.”
+
+            “We embrace a laid-back and artistic vibe that sets the stage for creativity and collaboration.”
+            </pre>
+            </p>  
+        </div>
+        <a class="container-flex" id="redirect" href="OwlsNest.html" target="_blank" title="Go to CoWork Website">
+            <img id="picdirect" src="Assets/LandingPage/gogogo.png">
+            <button id="linkto">Owl's Nest</button>
+        </a>   
+
+        </section>
+        <h1 class="layer">FUCKING IMAGES</h1>
+        <div class="scroll-container">
+            <img src="Assets/Bees Nest/3.jpg" alt="I" width="600" height="400">
+            <img src="Assets/Bees Nest/4.jpg" alt="Am" width="600" height="400">
+            <img src="Assets/Bees Nest/5.jpg" alt="Iron" width="600" height="400">
+            <img src="Assets/Bees Nest/6.jpg" alt="Man" width="600" height="400">
+        </div>
+            <h1 class="layer">Contacts</h1>
+            <br>
+        <section class="both">
+        <div class="Contactz">
             <a target="_blank" href="beesnestcoworking@gmail.com">
-            <img src="Assets/Bees Nest/Gmail.png" alt="gmail" width="40px">
+            <img src="Assets/Bees Nest/Gmail.png" alt="gmail"  width="80px">
             </a>
             <a target="_blank" href="https://www.facebook.com/share/cw74aNPp3BcWu1UE/">
-                <img src="Assets/Bees Nest/FB.png" alt="facebook" width="40px">
+                <img src="Assets/Bees Nest/FB.png" alt="facebook"  width="80px">
                 </a>
             <a target="_blank" href="https://www.instagram.com/beesnest.bgo?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
-                <img src="Assets/Bees Nest/IG.png" alt="instagram" width="50px">
+                <img src="Assets/Bees Nest/IG.png" alt="instagram"  width=100px">
                 </a>
-            
-            <p>Location Info: <br>
+        </div>
+        <div class="info">
+            <h2>Location Info:</h2>
+            <p><br>
                 3rd Level, PR Halili Building, 95-A Lower Bonifacio St., Baguio City, Philippines, 2600 (In front of SLU Main gate)</p>
-
-            <p>“Enjoy a productive and comfortable environment perfect for freelancers, entrepreneurs and small teams.”<br>
-                “We embrace a laid-back and artistic vibe that sets the stage for creativity and collaboration.”</p>    
-            
-            
-            
-            
-            
-            
-            
-            <p>Amenities: <br>
+                
+        </div>
+        </section>    
+        <h1 class="layer">Details</h1>
+        <section class="fulltab">
+        <div class ="Amenities">
+                <h2>Amenities:</h2>
+                <p><br>
                 <table>
                     <ol>No Corkage for:</ol>
                     <ol>Unlimited Coffee</ol>
@@ -113,10 +139,11 @@
                     <ol>Books For Reading </ol>
                     <ol>Board Games </ol>
                 </table>
-            </p>    
-
-
-            <p>Pricing: <br>
+                </p>    
+        </div>
+        <div class ="Pricing">
+            <h2>Pricing:</h2>    
+            <p><br>
                 <table>
                     <ol>Student Promo: 50 per hour</ol>
                     <ol>First Hour: 60 pesos</ol>
@@ -128,12 +155,12 @@
                     <ol>7th Hour: 50 pesos (375)</ol>
                     <ol>8th Hour: 50 pesos (425)</ol>
                     <ol>Day Pass: 600 pesos</ol>
-                    <ol>Free fast internet</ol>
                     <ol>Weekly Pass: 3,500 pesos</ol>
                     <ol>Monthly Pass: 13,000 pesos</ol>
                 </table>
             </p>
-        </section>-->
+        </div>
+        </section>    
         <footer>
             <hr>
             <p>&copy; Techna 2024</p>
