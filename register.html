@@ -2,35 +2,25 @@
 <html>
     <head>
         <meta lang="en" charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <title>Login Page</title>
+        <title>Register Account</title>
         <link rel="stylesheet" href="login.css">
         <link rel="stylesheet" href="style.css">
     </head>
     <body class="flexed">
-        <header class="flexed"> <!-------Navigation------->
-            <div class="flexed" id="logoPlaceHolder">
-                <a href="index.html"><img id="header-logo" src="Assets/LandingPage/Techna-logo.svg" alt="Logo"></a>
-                <h1>TECHNA</h1>
-            </div>
-            <nav>
-                <a href="#hero"><button>Home</button></a>
-                <a href="#feature"><button>About</button></a>
-                <a href="#team"><button>Team</button></a>
-                <a href="#contacts"><button>Contact Us</button></a>
-            </nav>
-        </header>
-        <section class="flexed">
+        <section id="register-page">
             <div class="flexed" id="login-logo">
-                <img src="Assets/LandingPage/Techna-logo-colored.svg" alt="">
+                <a href="index.html"><img src="Assets/LandingPage/Techna-logo-colored.svg" alt=""></a>
                 <h1>Techna Owl's Nest</h1>
             </div>
-            <div class="flexed" id="details">
+            <div class="flexed" id="login-form">
                 <form class="flexed" action="OwlsNest.html">
-                    <label for="userName">Username:</label>
-                        <input type="text" placeholder="Username" required>
-                    <label for="message">Password:</label>
-                        <input type="password" placeholder="Password" required>
-                    <button id="submit"><a href="index.html" target=""></a>Register</button>
+                    <label for="email">Email:</label>
+                        <input id="email" type="email" placeholder="Email" required>
+                    <label for="username">Username:</label>
+                        <input id="username" type="text" placeholder="Username" required>
+                    <label for="password">Password:</label>
+                        <input id="password" type="password" placeholder="Password" required>
+                    <button class="login-btn">Login</button>
                     <a id="change-login" href="login.html">Already have an account? Login here</a>
                 </form>
             </div>

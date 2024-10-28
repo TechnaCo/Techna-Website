@@ -54,7 +54,8 @@ header{
   width: 80px;
 }
 nav{
-  text-align: right;
+  display: flex;
+  flex-direction: row-reverse;
   flex-grow: 1;
 }
 nav button{
@@ -74,9 +75,25 @@ nav button:hover {
   background-color: #031222;
   text-decoration: none;
 }
+/*Menu for Smaller Screens*/
+#menu-popup{
+  display: none;
+}
+#nav-mobile img{
+  width: 40px;
+  height: 40px;
+}
+#nav-mobile{
+  position: relative;
+  display: none;
+  cursor: pointer;
+}
+#menu-popup:checked~div{
+  display: flex;
+  flex-wrap: wrap;
+}
 /*Hero*/
 #hero{
-  width: 100vw;
   height: 100vh;
   padding: 0 5vw;
   margin-top: -50px;
@@ -94,10 +111,6 @@ nav button:hover {
   font-family: mont;
   font-size: 50px;
   text-align: start;
-  /*somewhat obscure property*/
-  background-clip: text;
-  background-image:linear-gradient(to right,#06d2c5, #0a3753); 
-  color: transparent;
 }
 #introduction{
   text-align: justify;
@@ -125,21 +138,21 @@ nav button:hover {
 }
 /*Main-Feature*/
 #main-feature{
-  width: 70vw;
+  width: 80vw;
   font-size: 1.5rem;
-  padding: 2vw 5vh;
   margin-top: 5vh;
   border-radius: 40px;
   background-image: linear-gradient(to right, #0a3753, #061e36);
 }
 #main-content{
-  width: 40Vw;
+  width: 800px;
   text-align: justify;
   justify-content: left;
   margin-top: 1vh;  
 }
 #main-content h1{
   font-size: 3rem;
+  margin: 0;
 }
 #main-content ul{
   text-align: left;
@@ -239,7 +252,7 @@ nav button:hover {
   width: 30%;
 }
 #contact-info{
-  width: 400px;
+  width: 350px;
   font-size: 1rem;
   border: 6px solid #061e36;
   flex-direction: column;
@@ -262,6 +275,15 @@ footer {
 
 /* Media Queries */
 @media (width < 1400px) {
+  #nav-desktop{
+    display: none;
+  }
+  header nav button{
+    font-size: 3vh;
+  }
+  #nav-mobile{
+    display: block;
+  }
   #hero{
     flex-direction: column;
     height: auto;

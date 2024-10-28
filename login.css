@@ -1,3 +1,9 @@
+body{
+    background-image: url(Assets/LandingPage/hero-bg.svg);
+    margin: 5vw;
+    gap: 4vw;
+    height: 100vh;
+}
 section{
     width: 100vw;
     height: 100vh;
@@ -5,51 +11,81 @@ section{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-image: url(Assets/LandingPage/hero-bg.svg);
+}
+#register-page{
+    flex-direction: row;
+    gap: 5vw;
+    margin: 5vw;
 }
 #login-logo{
+    font-family: megrath;
     font-size: 2rem;
 }
 #login-logo img{
-    width: 400px;
-    height: 400px;
+    width: 350px;
+    height: 350px;
 }
-h1{
+#login-logo h1{
     margin: 0;
 }
-#details{
+#login-form{
     width: 50vw;
+    padding: 15px;
     border-radius: 40px;
-    flex-direction: column;
     background-image: linear-gradient(to right, #0a3753, #061e36);
 }
-form{
+#login-form form{
+    width: 90%;
     font-family: mont;
-    width: 40vw;
-    padding: 1vw 1vh;
     flex-direction: column;
     gap: 1vw;
+    padding: 1vw 1vh;
 }
-input{
-    width: 40vw;
+#login-form input{
+    width: inherit;
     font-family: mont;
     font-size: 1rem;
     height: 2rem;
 }
-#submit{
+#login-form .login-btn{
+    width: 50%;
     font-family: mont;
+    font-size: 1rem;
+    color: #e1ecee;
+    border: solid 2px #031222;
+    border-radius: 20px;
+    background-color: #031222;
+    cursor: pointer;
 }
-#change-login{
-    color: white;
-    text-decoration: none;
+#change-login,#forgot{
+    color: #e1ecee;
 }
-@media (width < 1000px) {
 
+@media (width < 1200px) {
+    h1{
+        font-size: 1.5rem;
+    }
+    input{
+        height: 1.5rem;
+    }
+    #details{
+        width: 90vw;
+    }
+    form{
+        gap: 2vh;
+    }
+    #login-form{
+        width: 80vw;
+    }
     #login-logo{
         flex-direction: column;
+        font-size: 1.5rem;
     }
     #login-logo img{
         width: 200px;
         height: 200px;
+    }
+    #register-page{
+        flex-direction: column;
     }
 }
