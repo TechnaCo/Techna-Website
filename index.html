@@ -120,33 +120,65 @@
                     </div>
                 </section>
             </article>
-            <h1 class="divider">Contact Us</h1> <!-------Contact------->
-            <article class="flexed" id="contacts">
-                <form class="flexed" id="inquiry" action="">
-                    <label for="email">Email:</label>
-                        <input type="email" placeholder="Email address" required>
-                    <label for="subject">Subject:</label>
-                        <input type="text" placeholder="Subject" required>
-                    <label for="message">Message:</label>
-                        <textarea id="message" placeholder="Message"></textarea>
-                    <button type="submit" id="submit">Submit</button>
-                </form>
-                <section class="container-contact" id="contact-info">
-                    <h1>Reach Us Through</h1>
-                    <div class="container-contact">
-                        <img src="Assets/LandingPage/call.png" alt="">
-                        <address>Contact Number: <br> <a href="number.com">0918 283 3278 / +63 923 678 9872</a></address><hr>
-                    </div>
-                    <div class="container-contact">
-                        <img src="Assets/LandingPage/email.png" alt="">
-                        <address>Email Address: <br> <a href="LoremIpsum@gmail.com">idkwhattoput@idk.com</a></address><hr>
-                    </div>
-                    <div class="container-contact">
-                        <img src="Assets/LandingPage/location-icon.png" alt="">
-                        <address>Location: <br> #69 Smthg Street, Brgy. idk</address>
-                    </div>
+                <!-- contact -->
+            <!---Header-->
+        <div class="container"></div>   
+        <h1>CONTACT US</h1>
+     
+<!-- submissions -->
+ <div id="contactbox">
+        <article class="flexed" id="submissions">
+            <form action="mailto:idkwhattoput@idk.com" method="post">
+                <section class="input-box">
+                    <label for="email"></label>   
+                        <input type="email" id="email" name="email" 
+                        placeholder="Email:" required>
                 </section>
-            </article>
+                <section class="input-box">
+                    <label for="subject"></label>
+                    <input type="text"
+                    id="subject" name="subject"
+                    placeholder="Subject:">
+                </section>
+                <section class="input-box">
+                    <label for="message"></label>
+                    <textarea  rows=8 id="message" name="message"
+                    placeholder="Message:"></textarea>   
+                </section>
+                <section id="button"> <input type="submit" value="Submit"> </section>    
+            </form>
+        </article>
+
+        <!-- contact details -->
+        <article class="flexed" id="contact-details">
+                <h2>CONTACT DETAILS</h2>
+                <div id="img1"><img src="Assets/LandingPage/location-icon.png" alt="Location icon"></div>
+                <div id="img2"><img src="Assets/LandingPage/email.png" alt="Email icon"></div> 
+                <div id="img3"><img src="Assets/LandingPage/call.png" alt="Phone icon"></div>
+                <div id="p1">
+                        <h3 class="labls">Location</h3>
+                        <address>
+                            <div class="addr"> #69 Smthg Street<br>Brgy. idk </div>
+                        </address>
+                    </div>
+                <div id="p2">
+                    <h3 class="labls">Email</h3> 
+                    <address>
+                        <div class="addr"><a href="LoremIpsum@gmail.com">idkwhattoput@idk.com</a></div>
+                    </address>
+            </div>
+                <div id="p3">
+                    <address>
+                        <h3 class="labls">Phone Number</h3>
+                            <div class="addr">
+                                <a href="number.com">0918 283 3278 / <br>+63 923 678 9872</a>
+                            </div>
+                    </address>
+                </div>
+        </article>
+    </div>
+</div>
+<br>
         </main>
         <footer> <!-------Footer------->
             <hr>
