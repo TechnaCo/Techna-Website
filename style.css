@@ -402,8 +402,79 @@ h1 {
   object-fit: cover;
 }
 
-/*Bee's Nest*/
-.item {
+/* Bees nest*/
+#bntagline {
+  font-family: mont;
+  font-size: 50px;
+  text-align: start;
+  background-clip: text;
+  background-image: linear-gradient(to right, #06d2c5, #0a3753);
+  color: transparent;
+  padding-left: 2vw;
+}
+#bnlogo {
+  width: 35vw;
+  padding: 5vw;
+}
+#bnintro {
+  font-family: megrath;
+  margin: 3%;
+  padding-right: 3vw;
+  font-size: 35px;
+  color: #0a3753;
+}
+#bnlinkto {
+  color: #06d2c5;
+  background-color: transparent;
+  font-family: mont;
+  font-size: 40px;
+  border: none;
+  padding-left: 2vw;
+}
+#bnlinkto:hover {
+  text-decoration: underline;
+  text-underline-offset: 15px;
+  text-decoration-thickness: 4px;
+  cursor: pointer;
+}
+.layer {
+  font-family: open-sans;
+  font-size: 35px;
+  font-weight: 900;
+  text-align: center;
+  color: #ccc;
+  background-image: linear-gradient(180deg, #0a3753, #061e36);
+}
+.beesnest {
+  color: #000708;
+  background-color: rgb(182, 211, 246);
+  font-family: sans-serif;
+  margin: 0px;
+}
+.both {
   display: grid;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: 2fr 2fr;
+  background-color: rgb(182, 211, 246);
+}
+div.Contactz {
+  align-content: center;
+}
+
+div.info {
+  text-align: center;
+}
+.fulltab {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: rgb(182, 211, 246);
+}
+div.scroll-container {
+  overflow: auto;
+  white-space: nowrap;
+  padding: 10px;
+  background-color: rgb(51, 95, 148);
+}
+
+div.scroll-container img {
+  padding: 10px;
 }
