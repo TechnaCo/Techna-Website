@@ -16,7 +16,7 @@ body {
   font-family: sans-serif;
   margin: 0px;
 }
-.flexed{
+.flexed {
   display: flex;
   flex-wrap: wrap;
   text-align: center;
@@ -25,47 +25,49 @@ body {
   align-content: space-around;
   overflow: hidden;
 }
-.divider{
+.divider {
   font-family: open-sans;
   font-size: 35px;
   font-weight: 900;
   text-align: center;
-  background-image: linear-gradient(180deg,#0a3753, #061e36);
+  background-image: linear-gradient(180deg, #0a3753, #061e36);
 }
 /*Header*/
-header{
+header {
   width: 100vw;
   padding: 0 2vw;
   position: sticky;
   top: 0px;
   z-index: 10;
-  background-image:linear-gradient(#0a3753, #061e36);
+  background-image: linear-gradient(#0a3753, #061e36);
 }
-#logoPlaceHolder{
+#logoPlaceHolder {
+  display: flex;
   gap: 1vw;
+  align-items: center;
   font-family: megrath;
 }
-#logoPlaceHolder h1{
+#logoPlaceHolder h1 {
   margin: 0px;
   font-size: 40px;
   font-weight: 700;
 }
-#header-logo{
+#header-logo {
   width: 80px;
 }
-nav{
+nav {
   text-align: right;
   flex-grow: 1;
 }
-nav button{
-  font-size: 25px; 
+nav button {
+  font-size: 25px;
   font-family: megrath;
   padding: 5px 50px;
   color: #e1ecee;
   border: none;
   border-left: solid 2px #06d2c5;
-  background-color: transparent; 
-  cursor:pointer;
+  background-color: transparent;
+  cursor: pointer;
 }
 nav button:hover {
   color: #06d2c5;
@@ -75,7 +77,7 @@ nav button:hover {
   text-decoration: none;
 }
 /*Hero*/
-#hero{
+#hero {
   width: 100vw;
   height: 100vh;
   padding: 0 5vw;
@@ -83,10 +85,10 @@ nav button:hover {
   gap: 5vw;
   background-image: url(Assets/LandingPage/hero-bg.svg);
 }
-#brand-logo{
+#brand-logo {
   width: 650px;
 }
-#hero-txt{
+#hero-txt {
   width: 300px;
   flex-grow: 1;
 }
@@ -96,14 +98,14 @@ nav button:hover {
   text-align: start;
   /*somewhat obscure property*/
   background-clip: text;
-  background-image:linear-gradient(to right,#06d2c5, #0a3753); 
+  background-image: linear-gradient(to right, #06d2c5, #0a3753);
   color: transparent;
 }
-#introduction{
+#introduction {
   text-align: justify;
   font-size: 30px;
 }
-#redirect{
+#redirect {
   float: left;
   text-decoration: none;
 }
@@ -111,7 +113,7 @@ nav button:hover {
   width: 80px;
 }
 #linkto {
-  color:#06d2c5;
+  color: #06d2c5;
   background-color: transparent;
   font-family: mont;
   font-size: 40px;
@@ -124,7 +126,7 @@ nav button:hover {
   cursor: pointer;
 }
 /*Main-Feature*/
-#main-feature{
+#main-feature {
   width: 70vw;
   font-size: 1.5rem;
   padding: 2vw 5vh;
@@ -132,44 +134,44 @@ nav button:hover {
   border-radius: 40px;
   background-image: linear-gradient(to right, #0a3753, #061e36);
 }
-#main-content{
-  width: 40Vw;
+#main-content {
+  width: 40vw;
   text-align: justify;
   justify-content: left;
-  margin-top: 1vh;  
+  margin-top: 1vh;
 }
-#main-content h1{
+#main-content h1 {
   font-size: 3rem;
+  margin: 0;
 }
-#main-content ul{
+#main-content ul {
   text-align: left;
 }
-#main-feature img{
+#main-feature img {
   width: 400px;
 }
 /*Ohter-Features*/
 #feature {
-  padding: 5vh 5vw;
+  padding: 5vh 3vw;
   gap: 4vw;
   align-items: start;
 }
-.features{
-  width: 350px;
-  height: 650px;
+.features {
+  width: 300px;
+  height: 40%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: start;
   gap: 1rem;
   border-radius: 20px;
-  padding: 1vw;
+  padding: 2%;
   background-image: linear-gradient(to right, #0a3753, #061e36);
 }
-.features p{
+.features p {
   height: 30%;
   font-size: 1rem;
   line-height: 1.5rem;
-  align-content: center;
   margin: 0;
 }
 #feature img {
@@ -180,37 +182,37 @@ nav button:hover {
   margin-bottom: 0;
 }
 /*Team*/
-#leaders{
+#leaders {
   gap: 5vw;
   padding-top: 5vh;
 }
-#membersList{
+#membersList {
   gap: 2vw;
   row-gap: 2vh;
   padding: 5vh 5vw;
 }
-.members{
+.members {
   border-radius: 20px;
 }
-.members div{
+.members div {
   background-color: #061e36;
   padding: 5px;
   border-radius: 20px;
-  border: solid #0a3753 6px ;
+  border: solid #0a3753 6px;
 }
-#team img{
+#team img {
   width: 300px;
   height: 300px;
   border-radius: 20px;
-  background-image: linear-gradient(180deg,#0a3753, #061e36);
+  background-image: linear-gradient(180deg, #0a3753, #061e36);
 }
 /* Contacts */
-#contacts{
+#contacts {
   width: 100vw;
   padding: 5vh 5vw;
   gap: 20vw;
 }
-#inquiry{
+#inquiry {
   width: 600px;
   font-size: 1rem;
   border: 6px solid #061e36;
@@ -221,7 +223,7 @@ nav button:hover {
   gap: 10px;
   background-image: linear-gradient(180deg, #0a3753, #061e36);
 }
-#inquiry input{
+#inquiry input {
   width: 80%;
 }
 #message {
@@ -229,7 +231,7 @@ nav button:hover {
   min-width: 80%;
   min-height: 200px;
 }
-#submit{
+#submit {
   font-size: 1rem;
   color: #e1ecee;
   border: solid 2px #031222;
@@ -238,7 +240,7 @@ nav button:hover {
   cursor: pointer;
   width: 30%;
 }
-#contact-info{
+#contact-info {
   width: 400px;
   font-size: 1rem;
   border: 6px solid #061e36;
@@ -247,10 +249,10 @@ nav button:hover {
   padding: 1vw 1vh;
   background-image: linear-gradient(180deg, #0a3753, #061e36);
 }
-#contact-info img{
+#contact-info img {
   width: 50px;
 }
-#contact-info a{
+#contact-info a {
   color: #e1ecee;
   line-height: 2rem;
 }
@@ -261,55 +263,74 @@ footer {
 }
 
 /* Media Queries */
-@media (width < 1400px) {
-  #hero{
+@media (max-width: 1200px) {
+  .features {
     flex-direction: column;
+    align-items: center;
+  }
+  #hero {
     height: auto;
-    margin: 0;
+    margin-top: 0;
   }
-  #hero-txt{
-    width: 90vw;
-    flex-grow: 0;
-  }
-  #brand-logo{
+  #brand-logo {
     width: 400px;
   }
-  nav{
+  nav {
     text-align: center;
   }
-  nav button{
+  nav button {
     border: none;
   }
-  #main-feature{
+  #main-feature {
+    width: 90vw;
     font-size: 1.5rem;
-    padding: 1vw;
+    padding: 2vw;
   }
-  #contacts{
+  #main-content {
+    width: 80vw;
+  }
+  #contacts {
     flex-direction: column;
     gap: 5vh;
   }
-  #inquiry{
+  #inquiry {
     width: 90vw;
   }
-  #contact-info{
+  #contact-info {
+    width: 90vw;
+  }
+  /* Owls Nest Media Query */
+  #gallery-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .responsive {
+    height: auto;
+  }
+  div.gallery {
+    width: 90vw;
+    align-items: center;
+  }
+  div.gallery img {
     width: 90vw;
   }
 }
 
 /*Owls Nest*/
 .owl_nest {
-  height: 50%;
+  height: 50vw;
   align-self: center;
 }
 
 div.gallery {
-  border: 3px dotted #ccc;
+  padding: 5vh 2vw;
+  height: 30vw;
+  border: 3px #ccc;
   margin: 5px;
   border-radius: 20px;
   transition: 1s;
-}
-div.gallery:hover {
-  border: 3px dotted #0eacb5;
+  align-content: center;
+  background-color: #0a3753;
 }
 div.gallery img {
   width: 40%;
@@ -319,12 +340,19 @@ div.gallery img {
 div.desc {
   padding: 15px;
   text-align: center;
+  align-content: center;
 }
-
+div.desc p {
+  padding: 25px;
+}
 .responsive {
-  padding: 0 6px;
+  padding: 5px;
   width: 35%;
   display: inline-block;
+}
+.responsive .gallery:hover {
+  border: 3px #0eacb5;
+  transform: scale(1.1, 1.1);
 }
 h1 {
   text-align: center;
@@ -336,8 +364,9 @@ h1 {
 #gallery-container {
   text-align: center;
 }
+
 /*Reviews&Reccomended*/
-#reviews{
+#reviews {
   margin: 0;
   width: 100vw;
   gap: 6vw;
@@ -346,26 +375,35 @@ h1 {
   background-color: transparent;
   line-height: 40px;
 }
-#reviews img{
+#reviews img {
   width: 180px;
   border: solid 4px #0a3753;
   border-radius: 50%;
 }
-#reviews p{
+#reviews p {
   padding: 10px;
   border: solid #0a3753 4px;
   background-color: #031222;
   border-radius: 20px;
 }
-.topReviews{
+.topReviews {
   display: flex;
   align-items: center;
   gap: 2vw;
+}
+.topReviews:hover {
+  transform: scale(1.1, 1.1);
+  transition: ease-in-out 0.5s;
+}
+
+/* Owl Ratings */
+.ratings {
+  max-width: 50px;
+  object-fit: cover;
 }
 
 /*Bee's Nest*/
 .item {
   display: grid;
   grid-template-columns: auto auto auto;
-  
 }
