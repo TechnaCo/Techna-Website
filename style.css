@@ -350,6 +350,7 @@ div.desc p {
 .responsive .gallery:hover {
   border: 3px #0eacb5;
   transform: scale(1.1, 1.1);
+  background-color:  hsl(203, 72%, 33%);  
 }
 .info {
   flex: 2;
@@ -379,6 +380,9 @@ div.desc p {
   background-color: #031222;
   border-radius: 20px;
 }
+#reviews p:hover {
+  background-color:  hsl(203, 72%, 33%);  
+}
 .topReviews {
   display: flex;
   align-items: center;
@@ -401,28 +405,36 @@ div.desc p {
   font-size: 50px;
   text-align: start;
   background-clip: text;
-  background-image: linear-gradient(to right, #06d2c5, #0a3753);
+  background-color: #06d2c5;
   color: transparent;
   padding-left: 2vw;
 }
 #bnlogo {
   width: 35vw;
   padding: 5vw;
+  border-radius: 5px;
 }
 #bnintro {
   font-family: megrath;
-  margin: 3%;
-  padding-right: 3vw;
+  margin: 5px;
+  padding: 5vh 2vw;
   font-size: 35px;
-  color: #0a3753;
+  color: #ffffff;  text-align: left;
+  height: 30vw;
+  border-radius: 20px;
+  background-color: #0a3753;
+}
+#bnintro:hover {
+background-color:  hsl(203, 72%, 33%);
+cursor: pointer;
 }
 #bnlinkto {
-  color: #06d2c5;
+  color:  #06d2c5;
   background-color: transparent;
   font-family: mont;
   font-size: 40px;
   border: none;
-  padding-left: 2vw;
+  padding: 2vh 1vw;
 }
 #bnlinkto:hover {
   text-decoration: underline;
@@ -453,21 +465,29 @@ div.desc p {
 .condet {
   text-align: left;
   padding: 5vh 2vw;
-  height: 25vw;
+  height: 35vw;
   margin: 5px;
   border-radius: 20px;
   background-color: #0a3753;
 }
+.condet:hover {
+  background-color:  hsl(203, 72%, 33%);
+  cursor: pointer;
+}
 .Amenities {
   padding: 0 5vw;
-  text-align: center;
+  text-align: left;
   list-style-type: circle;
 }
 .scroll-container {
   overflow: auto;
   white-space: nowrap;
   padding: 10px;
-  background-color: rgb(51, 95, 148);
+  background-color:  #0a3753;
+}
+.scroll-container:hover {
+  background-color:  hsl(203, 72%, 33%);
+  cursor: pointer;
 }
 .scroll-container img {
   padding: 10px;
