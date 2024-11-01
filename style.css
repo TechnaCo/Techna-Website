@@ -127,15 +127,14 @@ nav button:hover {
 }
 #main-feature {
   /*Main-Feature*/
-  width: 70vw;
+  width: 80vw;
   font-size: 1.5rem;
-  padding: 2vw 5vh;
   margin-top: 5vh;
   border-radius: 40px;
   background-image: linear-gradient(to right, #0a3753, #061e36);
 }
 #main-content {
-  width: 40vw;
+  width: 800px;
   text-align: justify;
   justify-content: left;
   margin-top: 1vh;
@@ -157,15 +156,15 @@ nav button:hover {
   align-items: start;
 }
 .features {
-  width: 300px;
-  height: 40%;
+  width: 350px;
+  height: 650px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: start;
   gap: 1rem;
   border-radius: 20px;
-  padding: 2%;
+  padding: 1vw;
   background-image: linear-gradient(to right, #0a3753, #061e36);
 }
 .features p {
