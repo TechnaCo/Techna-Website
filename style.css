@@ -16,7 +16,7 @@ body {
   font-family: sans-serif;
   margin: 0px;
 }
-.flexed{
+.flexed {
   display: flex;
   flex-wrap: wrap;
   text-align: center;
@@ -25,48 +25,50 @@ body {
   align-content: space-around;
   overflow: hidden;
 }
-.divider{
+.divider {
   font-family: open-sans;
   font-size: 35px;
   font-weight: 900;
+  margin: 5px 0;
   text-align: center;
-  background-image: linear-gradient(180deg,#0a3753, #061e36);
+  background-image: linear-gradient(180deg, #0a3753, #061e36);
 }
-/*Header*/
-header{
+header {
+  /*Header*/
   width: 100vw;
   padding: 0 2vw;
   position: sticky;
   top: 0px;
   z-index: 10;
-  background-image:linear-gradient(#0a3753, #061e36);
+  background-image: linear-gradient(#0a3753, #061e36);
 }
-#logoPlaceHolder{
+#logoPlaceHolder {
+  display: flex;
   gap: 1vw;
+  align-items: center;
   font-family: megrath;
 }
-#logoPlaceHolder h1{
+#logoPlaceHolder h1 {
   margin: 0px;
   font-size: 40px;
   font-weight: 700;
 }
-#header-logo{
+#header-logo {
   width: 80px;
 }
-nav{
-  display: flex;
-  flex-direction: row-reverse;
+nav {
+  text-align: right;
   flex-grow: 1;
 }
-nav button{
-  font-size: 25px; 
+nav button {
+  font-size: 25px;
   font-family: megrath;
   padding: 5px 50px;
   color: #e1ecee;
   border: none;
   border-left: solid 2px #06d2c5;
-  background-color: transparent; 
-  cursor:pointer;
+  background-color: transparent;
+  cursor: pointer;
 }
 nav button:hover {
   color: #06d2c5;
@@ -75,35 +77,25 @@ nav button:hover {
   background-color: #031222;
   text-decoration: none;
 }
-/*Menu for Smaller Screens*/
-#menu-popup{
-  display: none;
-}
-#nav-mobile img{
-  width: 40px;
-  height: 40px;
-}
-#nav-mobile{
-  position: relative;
-  display: none;
-  cursor: pointer;
-}
-#menu-popup:checked~div{
-  display: flex;
-  flex-wrap: wrap;
-}
-/*Hero*/
-#hero{
+#hero {
+  /*Hero*/
+  width: 100vw;
   height: 100vh;
   padding: 0 5vw;
   margin-top: -50px;
   gap: 5vw;
   background-image: url(Assets/LandingPage/hero-bg.svg);
 }
-#brand-logo{
+@media (max-width: 1200px) {
+  #hero {
+    height: auto;
+    margin-top: 0;
+  }
+}
+#brand-logo {
   width: 650px;
 }
-#hero-txt{
+#hero-txt {
   width: 300px;
   flex-grow: 1;
 }
@@ -111,12 +103,15 @@ nav button:hover {
   font-family: mont;
   font-size: 50px;
   text-align: start;
+  background-clip: text;
+  background-image: linear-gradient(to right, #06d2c5, #0a3753);
+  color: transparent;
 }
-#introduction{
+#introduction {
   text-align: justify;
   font-size: 30px;
 }
-#redirect{
+#redirect {
   float: left;
   text-decoration: none;
 }
@@ -124,7 +119,7 @@ nav button:hover {
   width: 80px;
 }
 #linkto {
-  color:#06d2c5;
+  color: #06d2c5;
   background-color: transparent;
   font-family: mont;
   font-size: 40px;
@@ -136,37 +131,37 @@ nav button:hover {
   text-decoration-thickness: 4px;
   cursor: pointer;
 }
-/*Main-Feature*/
-#main-feature{
+#main-feature {
+  /*Main-Feature*/
   width: 80vw;
   font-size: 1.5rem;
   margin-top: 5vh;
   border-radius: 40px;
   background-image: linear-gradient(to right, #0a3753, #061e36);
 }
-#main-content{
+#main-content {
   width: 800px;
   text-align: justify;
   justify-content: left;
-  margin-top: 1vh;  
+  margin-top: 1vh;
 }
-#main-content h1{
+#main-content h1 {
   font-size: 3rem;
   margin: 0;
 }
-#main-content ul{
+#main-content ul {
   text-align: left;
 }
-#main-feature img{
+#main-feature img {
   width: 400px;
 }
-/*Ohter-Features*/
 #feature {
-  padding: 5vh 5vw;
+  /*Other-Features*/
+  padding: 5vh 3vw;
   gap: 4vw;
   align-items: start;
 }
-.features{
+.features {
   width: 350px;
   height: 650px;
   display: flex;
@@ -178,11 +173,16 @@ nav button:hover {
   padding: 1vw;
   background-image: linear-gradient(to right, #0a3753, #061e36);
 }
-.features p{
+@media (max-width: 1200px) {
+  .features {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.features p {
   height: 30%;
   font-size: 1rem;
   line-height: 1.5rem;
-  align-content: center;
   margin: 0;
 }
 #feature img {
@@ -192,38 +192,38 @@ nav button:hover {
   border-radius: 20px;
   margin-bottom: 0;
 }
-/*Team*/
-#leaders{
+#leaders {
+  /*Team*/
   gap: 5vw;
   padding-top: 5vh;
 }
-#membersList{
+#membersList {
   gap: 2vw;
   row-gap: 2vh;
   padding: 5vh 5vw;
 }
-.members{
+.members {
   border-radius: 20px;
 }
-.members div{
+.members div {
   background-color: #061e36;
   padding: 5px;
   border-radius: 20px;
-  border: solid #0a3753 6px ;
+  border: solid #0a3753 6px;
 }
-#team img{
+#team img {
   width: 300px;
   height: 300px;
   border-radius: 20px;
-  background-image: linear-gradient(180deg,#0a3753, #061e36);
+  background-image: linear-gradient(180deg, #0a3753, #061e36);
 }
-/* Contacts */
-#contacts{
+#contacts {
+  /* Contacts */
   width: 100vw;
   padding: 5vh 5vw;
   gap: 20vw;
 }
-#inquiry{
+#inquiry {
   width: 600px;
   font-size: 1rem;
   border: 6px solid #061e36;
@@ -234,7 +234,7 @@ nav button:hover {
   gap: 10px;
   background-image: linear-gradient(180deg, #0a3753, #061e36);
 }
-#inquiry input{
+#inquiry input {
   width: 80%;
 }
 #message {
@@ -242,7 +242,7 @@ nav button:hover {
   min-width: 80%;
   min-height: 200px;
 }
-#submit{
+#submit {
   font-size: 1rem;
   color: #e1ecee;
   border: solid 2px #031222;
@@ -251,8 +251,8 @@ nav button:hover {
   cursor: pointer;
   width: 30%;
 }
-#contact-info{
-  width: 350px;
+#contact-info {
+  width: 400px;
   font-size: 1rem;
   border: 6px solid #061e36;
   flex-direction: column;
@@ -260,78 +260,86 @@ nav button:hover {
   padding: 1vw 1vh;
   background-image: linear-gradient(180deg, #0a3753, #061e36);
 }
-#contact-info img{
+#contact-info img {
   width: 50px;
 }
-#contact-info a{
+#contact-info a {
   color: #e1ecee;
   line-height: 2rem;
 }
-
-/* Footer */
 footer {
+  /* Footer */
   text-align: center;
 }
 
+
 /* Media Queries */
-@media (width < 1400px) {
-  #nav-desktop{
-    display: none;
-  }
-  header nav button{
-    font-size: 3vh;
-  }
-  #nav-mobile{
-    display: block;
-  }
-  #hero{
-    flex-direction: column;
+@media (max-width: 1200px) {
+  #hero {
     height: auto;
-    margin: 0;
+    margin-top: 0;
   }
-  #hero-txt{
-    width: 90vw;
-    flex-grow: 0;
-  }
-  #brand-logo{
+  #brand-logo {
     width: 400px;
   }
-  nav{
+  nav {
     text-align: center;
   }
-  nav button{
+  nav button {
     border: none;
   }
-  #main-feature{
+  #main-feature {
+    width: 90vw;
     font-size: 1.5rem;
-    padding: 1vw;
+    padding: 2vw;
   }
-  #contacts{
+  #main-content {
+    width: 80vw;
+  }
+  #contacts {
     flex-direction: column;
     gap: 5vh;
   }
-  #inquiry{
+  #inquiry {
     width: 90vw;
   }
-  #contact-info{
+  #contact-info {
+    width: 90vw;
+  }
+  /* Owls Nest Media Query */
+  #gallery-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .responsive {
+    height: auto;
+  }
+  div.gallery {
+    width: 90vw;
+    align-items: center;
+  }
+  div.gallery img {
     width: 90vw;
   }
 }
 
 /*Owls Nest*/
+#owlslogo {
+  width: 80px;
+  padding-top: 5px;
+}
 .owl_nest {
-  height: 50%;
+  height: 50vw;
   align-self: center;
 }
-
 div.gallery {
-  border: 3px dotted #ccc;
+  padding: 5vh 2vw;
+  height: 30vw;
+  border: 3px #ccc;
   margin: 5px;
   border-radius: 20px;
-  transition: 1s;
-}
-div.gallery:hover {
-  border: 3px dotted #0eacb5;
+  align-content: center;
+  background-color: #0a3753;
 }
 div.gallery img {
   width: 40%;
@@ -341,15 +349,21 @@ div.gallery img {
 div.desc {
   padding: 15px;
   text-align: center;
+  align-content: center;
 }
-
+div.desc p {
+  padding: 25px;
+}
 .responsive {
-  padding: 0 6px;
+  padding: 5px;
   width: 35%;
   display: inline-block;
 }
-h1 {
-  text-align: center;
+.responsive .gallery:hover {
+  border: 3px #0eacb5;
+  transform: scale(1.1, 1.1);
+  background-color: hsl(203, 72%, 33%);
+  transition: 1s;
 }
 .info {
   flex: 2;
@@ -358,8 +372,8 @@ h1 {
 #gallery-container {
   text-align: center;
 }
-/*Reviews&Reccomended*/
-#reviews{
+#reviews {
+  /*Reviews&Reccomended*/
   margin: 0;
   width: 100vw;
   gap: 6vw;
@@ -368,26 +382,126 @@ h1 {
   background-color: transparent;
   line-height: 40px;
 }
-#reviews img{
+#reviews img {
   width: 180px;
   border: solid 4px #0a3753;
   border-radius: 50%;
 }
-#reviews p{
+#reviews p {
   padding: 10px;
   border: solid #0a3753 4px;
   background-color: #031222;
   border-radius: 20px;
 }
-.topReviews{
+#reviews p:hover {
+  background-color: hsl(203, 72%, 33%);
+}
+.topReviews {
   display: flex;
   align-items: center;
   gap: 2vw;
 }
+.topReviews :hover {
+  transform: scale(1.1, 1.1);
+  transition: 1s;
+}
+.ratings {
+  /* Owl Ratings */
+  max-width: 50px;
+  object-fit: cover;
+}
 
-/*Bee's Nest*/
-.item {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  
+/* Bees nest*/
+#bntagline {
+  font-family: mont;
+  font-size: 50px;
+  text-align: start;
+  background-clip: text;
+  background-color: #06d2c5;
+  color: transparent;
+  padding-left: 2vw;
+}
+#bnlogo {
+  width: 35vw;
+  padding: 5vw;
+  border-radius: 5px;
+}
+#bnintro {
+  font-family: megrath;
+  margin: 5px;
+  padding: 5vh 2vw;
+  font-size: 35px;
+  color: #ffffff;
+  text-align: left;
+  height: 30vw;
+  border-radius: 20px;
+  background-color: #0a3753;
+}
+#bnintro:hover {
+  background-color: hsl(203, 72%, 33%);
+  cursor: pointer;
+}
+#bnlinkto {
+  color: #06d2c5;
+  background-color: transparent;
+  font-family: mont;
+  font-size: 40px;
+  border: none;
+  padding: 2vh 1vw;
+}
+#bnlinkto:hover {
+  text-decoration: underline;
+  text-underline-offset: 15px;
+  text-decoration-thickness: 4px;
+  cursor: pointer;
+}
+.layer {
+  font-family: open-sans;
+  font-size: 35px;
+  font-weight: 900;
+  text-align: center;
+  color: #ffffff;
+  background-image: linear-gradient(180deg, #0a3753, #061e36);
+}
+.beesnest {
+  color: #000708;
+  background-color: rgb(182, 211, 246);
+  font-family: sans-serif;
+  margin: 0px;
+}
+#ConDet {
+  align-content: center;
+  align-items: flex-start;
+  color: #ffffff;
+  font-size: 20px;
+}
+.condet {
+  text-align: left;
+  padding: 5vh 2vw;
+  height: 35vw;
+  margin: 5px;
+  border-radius: 20px;
+  background-color: #0a3753;
+}
+.condet:hover {
+  background-color: hsl(203, 72%, 33%);
+  cursor: pointer;
+}
+.Amenities {
+  padding: 0 5vw;
+  text-align: left;
+  list-style-type: circle;
+}
+.scroll-container {
+  overflow: auto;
+  white-space: nowrap;
+  padding: 10px;
+  background-color: #0a3753;
+}
+.scroll-container:hover {
+  background-color: hsl(203, 72%, 33%);
+  cursor: pointer;
+}
+.scroll-container img {
+  padding: 10px;
 }
