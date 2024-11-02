@@ -7,6 +7,10 @@
   font-family: mont;
   src: url("fonts/Mont-HeavyDEMO.otf") format("opentype");
 }
+html{
+  scroll-behavior: smooth;
+  scroll-padding: 10rem;
+}
 * {
   box-sizing: border-box;
 }
@@ -33,8 +37,7 @@ body {
   text-align: center;
   background-image: linear-gradient(180deg, #0a3753, #061e36);
 }
-header {
-  /*Header*/
+header { /*Header*/
   width: 100vw;
   padding: 0 2vw;
   position: sticky;
@@ -70,6 +73,15 @@ nav button {
   background-color: transparent;
   cursor: pointer;
 }
+@media (max-width: 1200px) {
+  nav {
+    text-align: center;
+  }
+  nav button {
+    border: none;
+  }
+}
+
 nav button:hover {
   color: #06d2c5;
   border: solid 2px #06d2c5;
@@ -86,6 +98,16 @@ nav button:hover {
   gap: 5vw;
   background-image: url(Assets/LandingPage/hero-bg.svg);
 }
+@media (max-width: 1200px) {
+  #hero {
+    height: auto;
+    margin-top: 0;
+  }
+  #brand-logo {
+    width: 400px;
+  }
+}
+
 #brand-logo {
   width: 650px;
 }
@@ -133,11 +155,24 @@ nav button:hover {
   border-radius: 40px;
   background-image: linear-gradient(to right, #0a3753, #061e36);
 }
+@media (max-width: 1200px) {
+  #main-feature {
+    width: 90vw;
+    font-size: 1.5rem;
+    padding: 2vw;
+  }
+}
+
 #main-content {
   width: 800px;
   text-align: justify;
   justify-content: left;
   margin-top: 1vh;
+}
+@media (max-width: 1200px) {
+  #main-content {
+    width: 80vw;
+  }
 }
 #main-content h1 {
   font-size: 3rem;
@@ -167,6 +202,14 @@ nav button:hover {
   padding: 1vw;
   background-image: linear-gradient(to right, #0a3753, #061e36);
 }
+
+@media (max-width: 1200px) {
+  .features {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
 .features p {
   height: 30%;
   font-size: 1rem;
@@ -255,35 +298,8 @@ nav button:hover {
   color: #e1ecee;
   line-height: 2rem;
 }
-footer {
-  /* Footer */
-  text-align: center;
-}
 
-/* Media Queries */
 @media (max-width: 1200px) {
-  .features {
-    flex-direction: column;
-    align-items: center;
-  }
-  #hero {
-    height: auto;
-    margin-top: 0;
-  }
-  #brand-logo {
-    width: 400px;
-  }
-  nav {
-    text-align: center;
-  }
-  nav button {
-    border: none;
-  }
-  #main-feature {
-    width: 90vw;
-    font-size: 1.5rem;
-    padding: 2vw;
-  }
   #main-content {
     width: 80vw;
   }
@@ -297,7 +313,13 @@ footer {
   #contact-info {
     width: 90vw;
   }
-  /* Owls Nest Media Query */
+}
+footer {
+  /* Footer */
+  text-align: center;
+}
+
+@media (max-width: 1200px) {
   #gallery-container {
     flex-direction: column;
     align-items: center;
