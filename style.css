@@ -1,4 +1,4 @@
-/*Index*/
+/*Assets*/
 @font-face {
   font-family: megrath;
   src: url("../fonts/Megrath.ttf");
@@ -32,6 +32,7 @@ footer {
   margin-top: 5vh;
   text-align: center;
   align-content: center;
+  font-family: "megrath";
 }
 
 /* Reusable elements */
@@ -43,12 +44,14 @@ footer {
   text-align: center;
 }
 .divider {
-  font: 900 2rem "mont", sans-serif;
+  font-family: "megareth";
+  font-size: 3rem;
   text-align: center;
   margin: 0;
   background-image: linear-gradient(to right, #0a3753, #061e36);
 }
 
+/* {Index} */
 /*Header & Navigation*/
 header {
   width: 100vw;
@@ -116,9 +119,11 @@ nav ul a:hover {
 #hero-text {
   width: 300px;
   flex-grow: 1;
+  font-family: "month-heavy";
 }
 #hero-text h1 {
-  font: 3rem mont;
+  font-family: "megrath";
+  font-size: 3rem;
   text-align: start;
   color: #06d2c5;
 }
@@ -134,7 +139,8 @@ nav ul a:hover {
   width: 80px;
 }
 #redirect button {
-  font: 2rem mont;
+  font-family: "megrath";
+  font-size: 2rem;
   color: #06d2c5;
   background-color: transparent;
 }
@@ -169,7 +175,8 @@ nav ul a:hover {
 #main-content {
   width: 50%;
   gap: 5%;
-  font: 1.5rem "mont";
+  font-family: "mont-heavy";
+  font-size: 1.5rem;
   line-height: 3rem;
   text-align: justify;
 }
@@ -205,16 +212,26 @@ nav ul a:hover {
   gap: 10px;
   font-size: 1rem;
   line-height: 1.5rem;
-  background-color: #061e36;
+  background-image: linear-gradient(to right, #061e36, #0a3753);
+  border-radius: 20px;
+}
+.feature-box img {
+  width: 250px;
+  align-self: center;
+  padding: 10px 0;
 }
 .feature-box h2 {
-  font: 1.5rem "mont";
+  color: #06d2c5;
+  font-family: "mont-heavy";
+  font-size: 1.75rem;
+  padding: 15px 0;
   margin: 0 5%;
 }
 .feature-box p {
-  font: 1rem "mont";
+  font-family: "mont-extralight";
+  font-size: 1.2rem;
   flex-grow: 1;
-  align-content: center;
+  text-align: justify;
   margin: 0 5%;
 }
 @media (max-width: 1200px) {
@@ -230,7 +247,16 @@ nav ul a:hover {
 .team-member div {
   margin-top: -4px;
   background-color: #061e36;
-  border: 2px solid #0a3753;
+  border: 5px solid #0a3753;
+  border-radius: 20px;
+  font-family: "mont-heavy";
+  font-size: 1rem;
+}
+.team-member img {
+  width: 300px;
+  height: 300px;
+  border-radius: 20px;
+  background-image: linear-gradient(180deg, #0a3753, #061e36);
 }
 
 /* Contacts */
@@ -251,11 +277,13 @@ nav ul a:hover {
 }
 #inquiry input {
   width: 80%;
+  border-radius: 10px;
 }
 #message {
   max-width: 80%;
   min-width: 80%;
   min-height: 200px;
+  border-radius: 10px;
 }
 #submit {
   width: 30%;
@@ -309,11 +337,11 @@ nav ul a:hover {
   }
 }
 
-/*Owls Nest*/
-/*Reviews&Reccomended*/
+/* {Owls Nest} */
+/*Top Reviews*/
 #reviews {
   display: grid;
-  grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   margin: 0;
   gap: 6vw;
   padding: 5vh 2vw;
@@ -323,12 +351,19 @@ nav ul a:hover {
 #reviews p:hover {
   background-color: hsl(203, 72%, 33%);
 }
+#reviews:hover .top-reviews:not(:hover) {
+  filter: blur(5px);
+  transform: scale(0.9, 0.9);
+}
 .top-reviews {
   display: flex;
   flex-direction: column;
 }
+.top-reviews a {
+  text-decoration: none;
+}
 .top-reviews img {
-  width: 180px;
+  width: 200px;
   border: solid 4px #0a3753;
   border-radius: 50%;
 }
@@ -338,16 +373,18 @@ nav ul a:hover {
   flex-direction: column;
   justify-content: center;
   padding: 10px;
+  color: white;
   border: 4px solid #0a3753;
   border-radius: 20px;
   background-color: #031222;
 }
-.top-reviews p strong{
+.top-reviews p strong {
   font: 1.5rem "mont";
 }
 .top-reviews :hover {
   transform: scale(1.1, 1.1);
   transition: 1s;
+  transition-timing-function: ease-in-out;
 }
 .ratings {
   max-width: 50px;
@@ -375,6 +412,11 @@ nav ul a:hover {
   scroll-snap-align: center;
   text-decoration: none;
 }
+.gallery-box img {
+  width: 250px;
+  align-self: center;
+  padding-top: 10px;
+}
 .gallery-box .desc {
   max-height: 350px;
   display: flex;
@@ -395,7 +437,7 @@ nav ul a:hover {
   min-height: 4.5rem;
   text-align: center;
 }
-.desc em{
+.desc em {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -419,12 +461,12 @@ nav ul a:hover {
   transition: 1s;
 }
 @media (max-width: 1000px) {
-  .responsive:hover{
+  .responsive:hover {
     transform: none;
   }
 }
 
-
+/* {Bees Nest} */
 /*Space layout*/
 .space-layout {
   gap: 5vh;
@@ -448,7 +490,8 @@ nav ul a:hover {
 /* Space name */
 .space-name {
   width: 100vw;
-  font: 700 3rem "mont";
+  font-family: "mont-heavy";
+  font-size: 3rem;
 }
 /* Picture slider */
 .space-slider {
@@ -474,7 +517,9 @@ nav ul a:hover {
 }
 /* Tagline */
 .space-tagline {
-  font: 600 1.5rem "mont";
+  font-family: "mont-extralight";
+  font-size: 2rem;
+  color: #0a3753;
 }
 /* Description */
 .space-details {
@@ -487,7 +532,8 @@ nav ul a:hover {
 }
 .details {
   width: 400px;
-  font: 500 1rem "mont";
+  font-family: "mont-extralight";
+  font-size: 1.3rem;
   text-align: left;
   padding: 2%;
   border-radius: 20px;
