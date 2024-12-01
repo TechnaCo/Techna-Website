@@ -1,33 +1,130 @@
-/*Assets*/
-@font-face {
-  font-family: megrath;
-  src: url("../fonts/Megrath.ttf");
-}
-@font-face {
-  font-family: mont;
-  src: url("fonts/Mont-HeavyDEMO.otf") format("opentype");
-}
-
 /* Smoother redirect of header buttons */
 html {
   scroll-behavior: smooth;
 }
 body {
-  background-color: #020d10;
+  background-color: whitesmoke;
   font-family: sans-serif;
 }
+
 nav{
-  font: 1.3rem "megrath";
+  font-size: 1.3rem ;
   background-image: linear-gradient(to right, #0a3753, #061e36);
 }
 .nav-item a{
   color: #e1ecee;
+  padding: 5px 0;
+  letter-spacing: 2px;
 }
 .navbar-brand{
   font-size: 2rem;
+  letter-spacing: 2px;
 }
+.nav-link.active{
+  background-color: #093f61 !important;
+}
+
+main{
+  background-image: linear-gradient(to right, #0a3753, #061e36);
+}
+
+#hero{
+  height: 100vh;
+  margin-top: -80px;
+  position: relative;
+}
+#hero-bg{
+  background-image: url(Assets/LandingPage/Techna-logo.svg);
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100vw;
+  margin-top: -80px;
+  z-index: 0;
+  opacity: 0.1;
+
+}
+
+
+#hero-typewriter{
+  display: flex;
+  justify-content: center;
+  min-width: 280px;
+}
+
+#hero-typewriter span{
+  position: relative;
+}
+
+#hero-typewriter span::before{
+  content: "";
+  font-size: 2rem;
+  color: #d4e6f1;
+  animation: words 15s infinite;
+}
+
+#hero-typewriter span::after{
+  content: "";
+  position: absolute;
+  width: calc(100% + 8px);
+  height: 100%;
+  background-color: transparent;
+  border-left: 2px solid #d4e6f1;
+  animation: cursor .8s infinite, typing 15s steps(60) infinite;
+}
+
+@keyframes cursor {
+  to{
+      border-left: 2px solid #ff7f5000;
+  }
+}
+
+@keyframes words {
+  0%,33%{
+      content: "COMMIT to fostering an ever-evolving technological Community";
+  }
+  34%,65%{
+      content: "COLLABORATE to bring together diverse ideas and perspectives";
+  }
+  66%,100%{
+      content: "CREATE a dynamic environment where creativity flourishes";
+  }
+}
+
+
+
+.redirect {
+  background-color: #054b77;
+  font-size: 2rem;
+  border: none;
+  text-align: center;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+.redirect span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+.redirect span:after {
+  content: url(Assets/LandingPage/redirect-logo.svg);
+  width: 3rem;
+  position: absolute;
+  opacity: 0;
+  transition: 0.5s;
+  left: 10px
+}
+.redirect:hover span {
+  padding-right: 4rem;
+}
+.redirect:hover span:after {
+  opacity: 1;
+  left: 180px;
+}
+
 #secondary_feature .card{
   width: 22rem;
+  background-image: linear-gradient(to left, #0a3753, #061e36);
 }
 
 

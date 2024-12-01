@@ -19,20 +19,20 @@
     <link rel="stylesheet" href="style.css" />
   </head>
 
-  <body data-bs-theme="dark">
+  <body data-bs-theme="dark" style="background-image: linear-gradient(to right, #0a3753, #061e36)">
     <!--sets the theme of the website to dark-->
     <!-------Navigation------->
     <nav class="navbar bg-body-tertiary navbar-expand-lg sticky-top p-0">
-        <div class="container-fluid px-5">
+        <div class="container-fluid px-md-5">
             <a class="navbar-brand" href="#">
                 <img
                   src="Assets/LandingPage/Techna-logo.svg"
                   alt="Logo"
                   width="70"
                   height="70"
-                  class="d-inline-block align-text-center"
+                  class="d-inline-block align-items-center "
                 />
-                Techna
+                <span class="initialism fs-2 ">Techna</span>
             </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -44,41 +44,36 @@
             </div>
             <div class="offcanvas-body">
               <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 nav-pills">
-                <li class="nav-item"><a class="nav-link ms-lg-5 ps-sm-2" aria-current="page" href="#hero">Home</a></li>
-                <li class="nav-item"><a class="nav-link ms-lg-5 ps-sm-2" aria-current="page" href="#about">About</a></li>
-                <li class="nav-item"><a class="nav-link ms-lg-5 ps-sm-2" aria-current="page" href="#team">Team</a></li>
-                <li class="nav-item"><a class="nav-link ms-lg-5 ps-sm-2" aria-current="page" href="#contact">Contact Us</a></li>
+                <li class="nav-item"><a class="nav-link ms-lg-5 ps-2" aria-current="page" href="#hero">Home</a></li>
+                <li class="nav-item"><a class="nav-link ms-lg-5 ps-2" aria-current="page" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link ms-lg-5 ps-2" aria-current="page" href="#team">Team</a></li>
+                <li class="nav-item"><a class="nav-link ms-lg-5 ps-2" aria-current="page" href="#contact">Contact Us</a></li>
               </ul>
             </div>
           </div>
         </div>
     </nav>
     
-    <main data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary p-3 rounded-2" tabindex="0">
+    <main data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary p-md-5 p-sm-3 rounded-2" tabindex="0">
       <!-------Hero------->
-      <section class="" id="hero">
-        <img src="Assets/LandingPage/Techna-logo.svg" alt="logo"/>
-        <div id="hero-text">
-          <h1>TECHNA</h1>
-          <p>
-            "We are committed to fostering an ever-evolving technological
-            community, where innovation thrives and collaboration is at the
-            heart of progress. Bringing together diverse ideas and perspectives,
-            we create a dynamic environment where creativity flourishes."
-          </p>
-          <a
-            class=""
-            href="OwlsNest.html"
-            target="_blank"
-            title="Go to CoWork Website"
-          >
-            <!-------Link to Owls Nest------->
-            <img src="Assets/LandingPage/gogogo.png" />
-            <button>CO-WORK LOCATIONS</button>
+      
+      <section class="row flex-lg-row-reverse align-items-center bg-transparent g-5 py-5" id="hero">
+        
+        <!-- <div class="col-10 col-sm-8 col-lg-6">
+          <img class="d-block mx-lg-auto img-fluid" src="Assets/LandingPage/Techna-logo.svg" alt="logo" width="700px" height="700px"/>
+        </div> -->
+        <div>
+          <h1 class="display-5 fw-bold lh-1 mb-3 text-nowrap text-center">TECHNA</h1>
+          <div id="hero-typewriter">
+            <span></span>
+          </div>
+          <a class="align-items-center" href="OwlsNest.html" target="_blank" title="Go to CoWork Website">
+            <button type="button" class="redirect btn btn-primary btn-lg px-4 me-md-2"><span>Get Started</span></button>
           </a>
         </div>
+        <!-- <span id="hero-bg"></span> -->
       </section>
-      <h1 class="divider">About Owl's Nest</h1>
+
       <!-------About section------->
       <section class="" id="about">
         <div class="">
@@ -256,6 +251,7 @@
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"
       ></script>
+      <script src="index.js"></script>
     </main>
     <footer>
       <!-------Footer------->
