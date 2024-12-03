@@ -3,14 +3,14 @@ html {
 	scroll-behavior: smooth;
 }
 
-body{
-	color: #E8F1FF;
+/*sets the background to a gradient */
+main {
+	background: linear-gradient(90deg, #0a1f3fc7 0%, #142b4e 50%, #2d4874 100%);
 }
 
 /* Navbar */
 nav {
-	font-size: 1.3rem;
-	background: linear-gradient(90deg, #0a1f3fb3 0%, #142b4e 50%, #2D4874 100%);  
+	background: linear-gradient(90deg, #0a1f3fb3 0%, #142b4e 50%, #2d4874 100%);
 }
 .nav-item a {
 	color: #e1ecee;
@@ -22,12 +22,7 @@ nav {
 	letter-spacing: 2px;
 }
 .nav-link.active {
-	background: #0A1F3F !important;
-}
-
-/*sets the background to a gradient */
-body main {
-	background: linear-gradient(90deg, #0a1f3fc7 0%, #142b4e 50%, #2D4874 100%); 
+	background: #0a1f3f !important;
 }
 
 /* Hero Section */
@@ -41,7 +36,7 @@ body main {
 	transition: ease-in-out 0.8s;
 }
 #hero-text {
-	gap: 2rem;
+	gap: 5rem;
 	align-items: center;
 	justify-content: center;
 	z-index: 1;
@@ -71,7 +66,7 @@ body main {
 	border-radius: 1rem;
 	border: none;
 	cursor: pointer;
-	background: linear-gradient(270deg, #5b8cefc5 0%,#2D4874 100%); 
+	background: linear-gradient(270deg, #5b8cefc5 0%, #2d4874 100%);
 	transition: all 0.5s;
 }
 .redirect span {
@@ -84,7 +79,7 @@ body main {
 	width: 3rem;
 	position: absolute;
 	opacity: 0;
-	left: 0px;
+	left: 10px;
 	background-color: transparent;
 	transition: 0.4s;
 }
@@ -96,7 +91,7 @@ body main {
 	left: 80%;
 }
 @media (width: 768px) {
-	.redirect span{
+	.redirect span {
 		font-size: 1rem;
 	}
 }
@@ -130,11 +125,11 @@ body main {
 	}
 }
 
-#about{
+#about {
 	gap: 5rem;
 }
 
-#about img{
+#about img {
 	width: 250px;
 }
 
@@ -143,8 +138,128 @@ body main {
 	border: none;
 }
 
-#projects 
+/* ------------------------------------------ */
+/*                Team-Section                */
+/* ------------------------------------------ */
+.teamco {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	gap: 3rem;
+}
+.member {
+	display: inline-block;
+	justify-content: center;
+	align-items: center;
+}
+.profile {
+	justify-content: center;
+}
+.mbrname {
+	font-family: meow;
+	font-size: 1rem;
+	text-align: center;
+	padding: 1rem;
+	margin: 0;
+}
+.mbrdesc {
+	text-align: center;
+}
 
-#contact img {
+#projects #contact img {
 	width: 50px;
+}
+
+.contact .info-wrap {
+	background-color: var(--surface-color);
+	box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+	border-top: 3px solid var(--accent-color);
+	border-bottom: 3px solid var(--accent-color);
+	padding: 30px;
+	height: 100%;
+}
+
+@media (max-width: 575px) {
+	.contact .info-wrap {
+		padding: 20px;
+	}
+}
+
+.contact .info-item {
+	margin-bottom: 40px;
+}
+
+.contact .info-item i {
+	font-size: 20px;
+	color: var(--accent-color);
+	background: color-mix(in srgb, var(--accent-color), transparent 92%);
+	width: 44px;
+	height: 44px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50px;
+	transition: all 0.3s ease-in-out;
+	margin-right: 15px;
+}
+
+.contact .info-item h3 {
+	padding: 0;
+	font-size: 18px;
+	font-weight: 700;
+	margin-bottom: 5px;
+}
+
+.contact .info-item p {
+	padding: 0;
+	margin-bottom: 0;
+	font-size: 14px;
+}
+
+.contact .info-item:hover i {
+	background: var(--accent-color);
+	color: var(--contrast-color);
+}
+
+.contact .php-email-form {
+	background-color: var(--surface-color);
+	height: 100%;
+	padding: 30px;
+	border-top: 3px solid var(--accent-color);
+	border-bottom: 3px solid var(--accent-color);
+	box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 575px) {
+	.contact .php-email-form {
+		padding: 20px;
+	}
+}
+
+.contact .php-email-form input[type="text"],
+.contact .php-email-form input[type="email"],
+.contact .php-email-form textarea {
+	font-size: 14px;
+	padding: 10px 15px;
+	box-shadow: none;
+	border-radius: 0;
+	color: var(--default-color);
+	background-color: color-mix(in srgb, var(--background-color), transparent 50%);
+	border-color: color-mix(in srgb, var(--default-color), transparent 80%);
+}
+
+.contact .php-email-form button[type="submit"] {
+	background: #2D4874;
+	border: 0;
+	padding: 10px 30px;
+	transition: 0.4s;
+	border-radius: 50px;
+}
+
+.contact .php-email-form button[type="submit"]:hover {
+	background: #5B8DEF
+}
+
+.info-item img{
+	margin-right: 20px;
 }
