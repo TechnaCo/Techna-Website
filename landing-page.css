@@ -1,0 +1,150 @@
+/* Smoother redirect of header buttons */
+html {
+	scroll-behavior: smooth;
+}
+
+body{
+	color: #E8F1FF;
+}
+
+/* Navbar */
+nav {
+	font-size: 1.3rem;
+	background: linear-gradient(90deg, #0a1f3fb3 0%, #142b4e 50%, #2D4874 100%);  
+}
+.nav-item a {
+	color: #e1ecee;
+	padding: 5px 0;
+	letter-spacing: 2px;
+}
+.navbar-brand {
+	font-size: 2rem;
+	letter-spacing: 2px;
+}
+.nav-link.active {
+	background: #0A1F3F !important;
+}
+
+/*sets the background to a gradient */
+body main {
+	background: linear-gradient(90deg, #0a1f3fc7 0%, #142b4e 50%, #2D4874 100%); 
+}
+
+/* Hero Section */
+#hero {
+	height: 100vh;
+	margin-top: -80px;
+	letter-spacing: 8px;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	transition: ease-in-out 0.8s;
+}
+#hero-text {
+	gap: 2rem;
+	align-items: center;
+	justify-content: center;
+	z-index: 1;
+}
+#hero-bg {
+	height: 100vh;
+	width: 100vw;
+	z-index: 0;
+	opacity: 0.1;
+	position: absolute;
+	filter: blur(3px);
+}
+#hero-typewriter {
+	font-size: 2rem;
+	letter-spacing: 4px;
+	text-transform: capitalize;
+}
+#hero a {
+	display: flex;
+	cursor: unset;
+	width: auto;
+}
+.redirect {
+	display: inline-block;
+	position: relative;
+	font-size: 2rem;
+	border-radius: 1rem;
+	border: none;
+	cursor: pointer;
+	background: linear-gradient(270deg, #5b8cefc5 0%,#2D4874 100%); 
+	transition: all 0.5s;
+}
+.redirect span {
+	display: inline-block;
+	position: relative;
+	transition: 0.5s;
+}
+.redirect span:after {
+	content: url(Assets/LandingPage/redirect-logo.svg);
+	width: 3rem;
+	position: absolute;
+	opacity: 0;
+	left: 0px;
+	background-color: transparent;
+	transition: 0.4s;
+}
+.redirect:hover span {
+	padding-right: 4rem;
+}
+.redirect:hover span:after {
+	opacity: 1;
+	left: 80%;
+}
+@media (width: 768px) {
+	.redirect span{
+		font-size: 1rem;
+	}
+}
+
+/* Hero typewriter cursor */
+#typewriter-cursor {
+	margin: -0.5em;
+	-webkit-animation: Typewriter-cursor 1s infinite;
+	animation: Typewriter-cursor 1s infinite;
+}
+@-webkit-keyframes Typewriter-cursor {
+	0% {
+		opacity: 0;
+	}
+	50% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+@keyframes Typewriter-cursor {
+	0% {
+		opacity: 0;
+	}
+	50% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+
+#about{
+	gap: 5rem;
+}
+
+#about img{
+	width: 250px;
+}
+
+.card {
+	background-color: transparent;
+	border: none;
+}
+
+#projects 
+
+#contact img {
+	width: 50px;
+}

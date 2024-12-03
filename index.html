@@ -1,262 +1,252 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta
-      lang="en"
-      charset="UTF-8"
-      name="viewport"
-      content="width=device-width, initial-scale=1"
-    />
-    <title>TECHNA</title>
-    <link rel="icon" href="Assets/LandingPage/Techna-logo-colored.svg" />
-    <link rel="stylesheet" href="css/bootstrap.css" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="style.css" />
-  </head>
+	<head>
+		<meta lang="en" charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1" />
+		<title>TECHNA</title>
+		<link rel="icon" href="Assets/LandingPage/Techna-logo-colored.svg" />
+		<link rel="stylesheet" href="css/bootstrap.css" />
+		<link rel="stylesheet" href="landing-page.css" />
+	</head>
+	<body data-bs-theme="dark">
+		<!-------Navigation------->
+		<nav class="navbar bg-body-tertiary navbar-expand-lg sticky-top p-0">
+			<div class="container-fluid px-md-5 fw-bold">
+				<a class="navbar-brand" href="#">
+					<img src="Assets/LandingPage/Techna-logo.svg" alt="Logo" width="70" height="70" class="d-inline-block align-items-center" />
+					<span class="initialism fs-2">Techna</span>
+				</a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+					<div class="offcanvas-header">
+						<h5 class="offcanvas-title fw-bold" id="offcanvasNavbarLabel">Menu</h5>
+						<button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+					</div>
+					<div class="offcanvas-body">
+						<ul class="navbar-nav justify-content-end flex-grow-1 pe-3 nav-pills">
+							<li class="nav-item"><a class="nav-link ms-lg-5 ps-2 fw-bold" aria-current="page" href="#hero">Home</a></li>
+							<li class="nav-item"><a class="nav-link ms-lg-5 ps-2 fw-bold" aria-current="page" href="#about">About</a></li>
+							<li class="nav-item"><a class="nav-link ms-lg-5 ps-2 fw-bold" aria-current="page" href="#team">Team</a></li>
+							<li class="nav-item"><a class="nav-link ms-lg-5 ps-2 fw-bold" aria-current="page" href="#contact">Contact Us</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</nav>
 
-  <body data-bs-theme="dark" style="background-image: linear-gradient(to right, #0a3753, #061e36)">
-    <!--sets the theme of the website to dark-->
-    <!-------Navigation------->
-    <nav class="navbar bg-body-tertiary navbar-expand-lg sticky-top p-0">
-        <div class="container-fluid px-md-5">
-            <a class="navbar-brand" href="#">
-                <img
-                  src="Assets/LandingPage/Techna-logo.svg"
-                  alt="Logo"
-                  width="70"
-                  height="70"
-                  class="d-inline-block align-items-center "
-                />
-                <span class="initialism fs-2 ">Techna</span>
-            </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-            <div class="offcanvas-header">
-              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Techna</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-            </div>
-            <div class="offcanvas-body">
-              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 nav-pills">
-                <li class="nav-item"><a class="nav-link ms-lg-5 ps-2" aria-current="page" href="#hero">Home</a></li>
-                <li class="nav-item"><a class="nav-link ms-lg-5 ps-2" aria-current="page" href="#about">About</a></li>
-                <li class="nav-item"><a class="nav-link ms-lg-5 ps-2" aria-current="page" href="#team">Team</a></li>
-                <li class="nav-item"><a class="nav-link ms-lg-5 ps-2" aria-current="page" href="#contact">Contact Us</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-    </nav>
-    
-    <main data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary p-md-5 p-sm-3 rounded-2" tabindex="0">
-      <!-------Hero------->
-      
-      <section class="row flex-lg-row-reverse align-items-center bg-transparent g-5 py-5" id="hero">
-        
-        <!-- <div class="col-10 col-sm-8 col-lg-6">
-          <img class="d-block mx-lg-auto img-fluid" src="Assets/LandingPage/Techna-logo.svg" alt="logo" width="700px" height="700px"/>
-        </div> -->
-        <div>
-          <h1 class="display-5 fw-bold lh-1 mb-3 text-nowrap text-center">TECHNA</h1>
-          <div id="hero-typewriter">
-            <span></span>
-          </div>
-          <a class="align-items-center" href="OwlsNest.html" target="_blank" title="Go to CoWork Website">
-            <button type="button" class="redirect btn btn-primary btn-lg px-4 me-md-2"><span>Get Started</span></button>
-          </a>
-        </div>
-        <!-- <span id="hero-bg"></span> -->
-      </section>
+		<main data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary p-md-5 p-sm-3 rounded-2" tabindex="0">
+			<!-------Hero------->
+			<section class="row align-items-center bg-transparent" id="hero">
+				<img class="img-fluid" id="hero-bg" src="Assets/LandingPage/Techna-logo.svg" alt="hero-background" />
+				<div class="row" id="hero-text">
+					<h1 class="display-2 fw-bold lh-1 mb-3 text-nowrap text-center">TECHNA</h1>
+					<h1 class="text-center" id="hero-typewriter">
+						<span class="fw-bold h1 lh-lg"
+							>We <span id="typewriter"></span>
+							<span class="fs-1" id="typewriter-cursor">|</span>
+						</span>
+						<span class="h2"><br />To bring together diverse ideas and perspectives</span>
+					</h1>
+					<a href="OwlsNest.html" target="_blank" title="Go to CoWork Website">
+						<button type="button" class="container-fluid redirect btn btn-primary btn-lg px-4 me-md-2"><span>Get Started</span></button>
+					</a>
+				</div>
+			</section>
 
-      <!-------About section------->
-      <section class="" id="about">
-        <div class="">
-          <!-------Main Features------->
-          <div class="">
-            <h1>Owls Nest</h1>
-            <p>
-              An informative website made for research location convenience.
-              This idea was proposed in consideration of the many students who
-              struggle to locate a place fit for group tasks. The website offers
-              various features such as:
-            </p>
-          </div>
-          <img src="Assets/LandingPage/owl.png" alt="Techna mascot" />
-        </div>
-        <div class="container text-center" id="secondary_feature">
-          <div class="row justify-content-md-center">
-            <div class="card col-xl-3 col-md-5">
-              <img src="Assets/LandingPage/f1.png" alt="feature 1" />
-              <div class="card-body">
-                <h5 class="card-title">Ordering System</h5>
-                <p class="card-text">
-                  The style of order in which the locations of co-working spaces
-                  would be seen, can be changed with the click of a button.
-                  Specifically, there are two orders to choose from: the
-                  ascending order of Price rates or the descending order of
-                  recommendation rates.
-                </p>
-              </div>
-            </div>
-            <div class="card col-xl-3 col-md-5">
-              <img src="Assets/LandingPage/f2.png" alt="feature 2" />
-              <div class="card-body">
-                <h5 class="card-title">Customer Rating System</h5>
-                <p class="card-text">
-                  Owls Nest will have a Customer Rating system, where the users
-                  who have visited a place of their choice can leave a review on
-                  this site. They can tell their satisfaction by leaving a
-                  comment and giving them owls; these are alternate star ratings
-                  of 1 to 5.
-                </p>
-              </div>
-            </div>
-            <div class="card col-xl-3 col-md-5">
-              <img src="Assets/LandingPage/f3.png" alt="feature 3" />
-              <div class="card-body">
-                <h5 class="card-title">Alternative Inquiry</h5>
-                <p class="card-text">
-                  For users who require further inquiry and information for the
-                  locations of their choice. The website provides each the
-                  contacts of the locations of their choice. These contacts,
-                  when clicked, are programmed to bring them to the webpage of
-                  the location they picked.
-                </p>
-              </div>
-            </div>
-            <div class="card col-xl-3 col-md-5">
-              <img src="Assets/LandingPage/f4.png" alt="feature 4" />
-              <div class="card-body">
-                <h5 class="card-title">Location Marking</h5>
-                <p class="card-text">
-                  After picking the user's preferred co-working space, the
-                  website can serve as a GPS to guide the user using Google Maps
-                  to track the establishment from their specific location.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <h1 class="divider">Meet Our Team</h1>
-      <!-------Team section------->
-      <section class="" id="team">
-        <div class="">
-          <img src="Assets/Team/Minoza.svg" alt="LabLeader" />
-          <div>
-            <h1>Andrei Benedict A. Minoza</h1>
-            <p>Lab Leader</p>
-          </div>
-        </div>
-        <div class="">
-          <img src="Assets/Team/Bimmuyag.svg" alt="ResearchLeader" />
-          <div>
-            <h1>Ashel John D. Bimmuyag</h1>
-            <p>Research Leader</p>
-          </div>
-        </div>
-        <div class="">
-          <img src="Assets/Team/Bautista.svg" alt="member 1" />
-          <div>
-            <h1>Shanaya Maye M. Bautista</h1>
-            <p>Front-end Developer</p>
-          </div>
-        </div>
-        <div class="">
-          <img src="Assets/Team/Longbuan.svg" alt="member 2" />
-          <div>
-            <h1>Khirk C. Longbuan</h1>
-            <p>Front-end Developer</p>
-          </div>
-        </div>
-        <div class="">
-          <img src="Assets/Team/Valdriz.svg" alt="member 3" />
-          <div>
-            <h1>Jake Ivan T. Valdriz</h1>
-            <p>Front-end Developer</p>
-          </div>
-        </div>
-        <div class="">
-          <img src="Assets/Team/Cabanting.svg" alt="member 4" />
-          <div>
-            <h1>John Mark M. Cabanting</h1>
-            <p>Content Researcher</p>
-          </div>
-        </div>
-        <div class="">
-          <img src="Assets/Team/Bundang.svg" alt="member 5" />
-          <div>
-            <h1>Louis Daniel Bundang</h1>
-            <p>Content Researcher</p>
-          </div>
-        </div>
-      </section>
-      <h1 class="divider">Contact Us</h1>
-      <!-------Contacts------->
-      <section class="" id="contact">
-        <form class="">
-          <label for="email">Email:</label>
-          <input type="email" placeholder="Email address" required />
-          <label for="subject">Subject:</label>
-          <input type="text" placeholder="Subject" required />
-          <label for="message">Message:</label>
-          <textarea id="message" placeholder="Message"></textarea>
-          <button type="submit" id="submit">Submit</button>
-        </form>
-        <div class="">
-          <h1>Reach Us Through Our</h1>
-          <div>
-            <address>
-              Contact Number: <br />
-              <a href="0968 309 2702">0968 309 2702 / +63 968 309 2702</a>
-            </address>
-            <img
-              src="Assets/LandingPage/call.png"
-              alt="Techna contact number"
-            />
-          </div>
-          <hr />
-          <div>
-            <address>
-              Email Address: <br />
-              <a href="technaco2024@gmail.com">technaco2024@gmail.com </a>
-            </address>
-            <img
-              src="Assets/LandingPage/email.png"
-              alt="Techna email address"
-            />
-          </div>
-          <hr />
-          <div>
-            <address>
-              Location: <br />
-              9HMR+9XV, Bakakeng Sur Rd, Baguio, Benguet
-            </address>
-            <img
-              src="Assets/LandingPage/location-icon.png"
-              alt="Techna physical address"
-            />
-          </div>
-        </div>
-      </section>
-      <script src="js/bootstrap.js"></script>
-      <script
-        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"
-      ></script>
-      <script src="index.js"></script>
-    </main>
-    <footer>
-      <!-------Footer------->
-      <hr />
-      &copy; 2024 Techna. All rights reserved.
-    </footer>
-  </body>
+			<!-------About section------->
+			<section class="row align-items-center bg-transparent" id="about">
+
+				<div class="container-fluid">
+					<div class="row">
+						<h1 class="text-center">About Techna</h1>
+						<p class="lead text-center">Techna was made in 2024 by people who wish to bring together a community through technology</p>
+						<div class="col-lg-4 text-center">
+							<div class="mx-auto mb-5 mb-lg-0 mb-lg-3">
+								<img class="img-fluid" src="Assets/LandingPage/Commit-icon.svg" alt="We Commit icon" />
+								<h3>We Commit</h3>
+								<p class="h5 mb-0">To innovating, improving, and expertise.</p>
+							</div>
+						</div>
+						<div class="col-lg-4 text-center">
+							<div class="x-auto mb-5 mb-lg-0 mb-lg-3">
+								<img class="img-fluid" src="Assets/LandingPage/Create-icon.svg" alt="We Create icon" />
+								<h3>We Create</h3>
+								<p class="h5 mb-0">Spaces that inspire creativity and productivity.</p>
+							</div>
+						</div>
+						<div class="col-lg-4 text-center">
+							<div class="mx-auto mb-0 mb-lg-3">
+								<img class="img-fluid" src="Assets/LandingPage/Collaborate-icon.svg" alt="We Collaborate icon" />
+								<h3>We Collaborate</h3>
+								<p class="h5 mb-0">To our community and making a positive impact.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="container-fluid">
+					<div class="row gy-5 mb-5">
+						<h1 class="text-center" id="projects">Our projects</h1>
+						<div class="col-10 col-lg-6 col-xl-10">
+							<div class="d-lg-flex align-items-center">
+								<img class="img-fluid" src="Assets/LandingPage/Owls-nest-preview.png" alt="Owl's nest preview" />
+								<div class="details">
+									<h2>Owl's Nest</h2>
+									<p>
+										An informative website made for research location convenience. This idea was proposed in consideration of the many students who struggle to locate a place fit for group tasks. The website offers various
+										features.
+									</p>
+									<div class="buttons">
+										<a href="https://builder.bootstrapmade.com/demo/Yummy/" rel="nofollow" class="demo" target="_blank"><span title="Builder Demo">Edit Online</span></a>
+										<a href="https://bootstrapmade.com/demo/Yummy/" rel="nofollow" class="demo" target="_blank"><span title="Live Demo">Live Demo</span></a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="container text-center" id="secondary_feature">
+					<div class="row justify-content-md-center">
+						<div class="card col-xl-3 col-md-5">
+							<img src="Assets/LandingPage/f1.png" alt="feature 1" />
+							<div class="card-body">
+								<h5 class="card-title">Ordering System</h5>
+								<p class="card-text">
+									The style of order in which the locations of co-working spaces would be seen, can be changed with the click of a button. Specifically, there are two orders to choose from: the ascending order of Price rates
+									or the descending order of recommendation rates.
+								</p>
+							</div>
+						</div>
+						<div class="card col-xl-3 col-md-5">
+							<img src="Assets/LandingPage/f2.png" alt="feature 2" />
+							<div class="card-body">
+								<h5 class="card-title">Customer Rating System</h5>
+								<p class="card-text">
+									Owls Nest will have a Customer Rating system, where the users who have visited a place of their choice can leave a review on this site. They can tell their satisfaction by leaving a comment and giving them
+									owls; these are alternate star ratings of 1 to 5.
+								</p>
+							</div>
+						</div>
+						<div class="card col-xl-3 col-md-5">
+							<img src="Assets/LandingPage/f3.png" alt="feature 3" />
+							<div class="card-body">
+								<h5 class="card-title">Alternative Inquiry</h5>
+								<p class="card-text">
+									For users who require further inquiry and information for the locations of their choice. The website provides each the contacts of the locations of their choice. These contacts, when clicked, are programmed
+									to bring them to the webpage of the location they picked.
+								</p>
+							</div>
+						</div>
+						<div class="card col-xl-3 col-md-5">
+							<img src="Assets/LandingPage/f4.png" alt="feature 4" />
+							<div class="card-body">
+								<h5 class="card-title">Location Marking</h5>
+								<p class="card-text">After picking the user's preferred co-working space, the website can serve as a GPS to guide the user using Google Maps to track the establishment from their specific location.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</section>
+			<h1 class="divider">Meet Our Team</h1>
+			<!-------Team section------->
+			<section class="" id="team">
+				<div class="">
+					<img src="Assets/Team/Minoza.svg" alt="LabLeader" />
+					<div>
+						<h1>Andrei Benedict A. Minoza</h1>
+						<p>Lab Leader</p>
+					</div>
+				</div>
+				<div class="">
+					<img src="Assets/Team/Bimmuyag.svg" alt="ResearchLeader" />
+					<div>
+						<h1>Ashel John D. Bimmuyag</h1>
+						<p>Research Leader</p>
+					</div>
+				</div>
+				<div class="">
+					<img src="Assets/Team/Bautista.svg" alt="member 1" />
+					<div>
+						<h1>Shanaya Maye M. Bautista</h1>
+						<p>Front-end Developer</p>
+					</div>
+				</div>
+				<div class="">
+					<img src="Assets/Team/Longbuan.svg" alt="member 2" />
+					<div>
+						<h1>Khirk C. Longbuan</h1>
+						<p>Front-end Developer</p>
+					</div>
+				</div>
+				<div class="">
+					<img src="Assets/Team/Valdriz.svg" alt="member 3" />
+					<div>
+						<h1>Jake Ivan T. Valdriz</h1>
+						<p>Front-end Developer</p>
+					</div>
+				</div>
+				<div class="">
+					<img src="Assets/Team/Cabanting.svg" alt="member 4" />
+					<div>
+						<h1>John Mark M. Cabanting</h1>
+						<p>Content Researcher</p>
+					</div>
+				</div>
+				<div class="">
+					<img src="Assets/Team/Bundang.svg" alt="member 5" />
+					<div>
+						<h1>Louis Daniel Bundang</h1>
+						<p>Content Researcher</p>
+					</div>
+				</div>
+			</section>
+			<!-------Contacts------->
+			<section class="" id="contact">
+				<form class="">
+					<label for="email">Email:</label>
+					<input type="email" placeholder="Email address" required />
+					<label for="subject">Subject:</label>
+					<input type="text" placeholder="Subject" required />
+					<label for="message">Message:</label>
+					<textarea id="message" placeholder="Message"></textarea>
+					<button type="submit" id="submit">Submit</button>
+				</form>
+				<div class="">
+					<h1>Reach Us Through Our</h1>
+					<div>
+						<address>
+							Contact Number: <br />
+							<a href="0968 309 2702">0968 309 2702 / +63 968 309 2702</a>
+						</address>
+						<img src="Assets/LandingPage/call.png" alt="Techna contact number" />
+					</div>
+					<hr />
+					<div>
+						<address>
+							Email Address: <br />
+							<a href="technaco2024@gmail.com">technaco2024@gmail.com </a>
+						</address>
+						<img src="Assets/LandingPage/email.png" alt="Techna email address" />
+					</div>
+					<hr />
+					<div>
+						<address>
+							Location: <br />
+							9HMR+9XV, Bakakeng Sur Rd, Baguio, Benguet
+						</address>
+						<img src="Assets/LandingPage/location-icon.png" alt="Techna physical address" />
+					</div>
+				</div>
+			</section>
+			<script src="js/bootstrap.js"></script>
+			<script src="index.js"></script>
+		</main>
+		<footer>
+			<!-------Footer------->
+			<hr />
+			&copy; 2024 Techna. All rights reserved.
+		</footer>
+	</body>
 </html>
